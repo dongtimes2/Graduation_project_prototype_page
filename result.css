@@ -49,19 +49,19 @@ table {
 
 @font-face {
   font-family: 'NotoSans';
-  src: url('./font/NotoSansKR-Regular.otf');
+  src: url('./font/NotoSansKR-Regular.woff2');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'NotoSans';
-  src: url('./font/NotoSansKR-Medium.otf');
+  src: url('./font/NotoSansKR-Medium.woff2');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'NotoSans';
-  src: url('./font/NotoSansKR-Bold.otf');
+  src: url('./font/NotoSansKR-Bold.woff2');
   font-weight: 700;
 }
 
