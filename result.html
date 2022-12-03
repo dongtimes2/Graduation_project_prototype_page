@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="result.css" type="text/css">
+  <title>Sample Main</title>
+</head>
+<body>
+  <div id="contentArea">
+    <video id="backVideo" autoplay muted loop>
+      <source src="./public/particle.mp4"/>
+    </video>
+    <div id="imageArea">
+      <img id="image" src="./public/neon-leaf.png" alt="leaves_image">
+    </div>
+    <div id="guideArea">
+      <div id="chartArea">
+        진단 결과
+        <div id="chart">
+          <span data-val="100%" class="red">흰가루병</span>
+          <span data-val="41%">검무늬병</span>
+          <span data-val="35%">탄저병</span>
+          <span data-val="31%">곰팡이</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button type="button" onclick="a()">초기 화면</button>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+    const a = () => {
+      location.href='index.html'
+    };
+
+    d3.selectAll('span')
+      .datum(function(){return this.dataset;})
+      .style("width", "30%")
+      .transition()
+      .duration(1500)
+      .style("width", d=>d.val)
+  </script>
+</body>
+</html>

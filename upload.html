@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="upload.css" type="text/css">
+  <title>Sample Main</title>
+</head>
+<body>
+  <div id="contentArea">
+    <video id="backVideo" autoplay muted loop>
+      <source src="./public/particle.mp4"/>
+    </video>
+    <div id="imageArea">
+      <img id="image" src="./public/neon-leaf.png" alt="leaves_image">
+    </div>
+    <div id="guideArea">
+      <div>
+        진단할 식물의 잎을 업로드해주세요
+      </div>
+      <div id="button">
+        <button type="button" onclick="b()">업로드 하기</button>
+      </div>
+    </div>
+  </div>
+  <button type="button" onclick="a()">초기 화면</button>
+  <script>
+    const a = () => {
+      location.href='index.html'
+    };
+
+    const b = () => {
+      location.href='result.html'
+    };
+  </script>
+</body>
+</html>

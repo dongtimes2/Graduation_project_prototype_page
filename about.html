@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <title>Sample Main</title>
+</head>
+<body>
+  <div id="backVideoArea">
+    <video id="backVideo" autoplay muted loop>
+      <source src="./public/leaf2.mp4"/>
+    </video>
+    <div id="logo">
+      <span>브랜드 위치</span>
+    </div>
+    <div id="text">
+      <span>Sample Page</span>
+    </div>
+    <div id="footer">
+      <div>홍익대학교 컴퓨터공학과 졸업프로젝트 6조</div>
+    </div>
+    <div id="button">
+      <button type="button" onclick="a()">업로드 화면</button>
+    </div>
+  </div>
+  <script>
+    const a = () => {
+      location.href='upload.html'
+    };
+  </script>
+</body>
+</html>
